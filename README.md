@@ -22,26 +22,25 @@ yarn / npm
 
 The finished project should meet the following requirements:
 
-1) As a user, I want to search by song name and see autocomplete results.
+1. As a user, I want to search by song name and see autocomplete results.
 
-- The autocomplete should be configurable to show:
-  - List of Song Titles
-  - List of Song Titles, and Play/Pause button to preview a song. (Default)
+   The autocomplete should be configurable to show:
+    - List of Song Titles
+    - List of Song Titles, and Play/Pause button to preview a song. (Default)
 
-1) As a user, I want to see an album cover of the selected song.
+2. As a user, I want to see an album cover of the selected song.
 
-- When clicking a Song Title in search results, the album cover of selected song
-  should be displayed.
+   When clicking a Song Title in search results, the album cover of selected song
+   should be displayed.
 
-1) As a user, I want to Play and Pause songs via album cover.
+3. As a user, I want to Play and Pause songs via album cover.
 
-- When hovering over Album Cover, the respective Play or Pause button should
-  be displayed.
+   When hovering over Album Cover, the respective Play or Pause button should
+   be displayed.
 
-1) As a user, I want an already playing song whether from Album Cover or Search
-Results to Pause, when another song is selected to be played.
+4. As a user, I want an already playing song whether from Album Cover or Search Results to Pause, when another song is selected to be played.
 
-Bonus:
+### Bonus
 
 - Implement test coverage
 
@@ -54,7 +53,7 @@ unless you use their supported JS SDK: `https://github.com/Napster/napster.js`.
 You can work directly with the API or SDK, either option is perfectly fine for
 this challenge.
 
-### Running Locally
+## Running Locally
 
 ```sh
 npm install
@@ -62,13 +61,16 @@ npm run build
 npm start
 ```
 
-#### Napster API KEY
+## Napster API KEY
 
 `YTkxZTRhNzAtODdlNy00ZjMzLTg0MWItOTc0NmZmNjU4Yzk4`
 
+## Example API Requests
+
+### GET Album Image
+
 ```js
 /**
- * GET Album Image
  * http://direct.napster.com/imageserver/v2/albums/{album_id}/images/{size}.{extension}
  *
  * Example:
@@ -76,9 +78,10 @@ npm start
  */
 ```
 
+### GET Search Tracks
+
 ```js
 /**
- * GET Search Tracks
  * http://api.napster.com/v2.2/search?query={trackTitle}&type=track
  *
  * Example:
